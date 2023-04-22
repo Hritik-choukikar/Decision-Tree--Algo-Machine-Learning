@@ -27,7 +27,7 @@ model=load_model()
 
 
 if __name__=='__main__':
-    st.write('Helloo world')
+    st.write('U can check if one is earning more than 100k or not')
 
     company=st.selectbox('Select Company:',(df.company.unique()))
     if company=='google':
