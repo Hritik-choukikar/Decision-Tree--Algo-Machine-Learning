@@ -52,8 +52,8 @@ if __name__=='__main__':
     if button:
         prediction=model.predict([[company,job,degree]])
         if prediction[0]==1:
-            st.write('Your prdiction is :',"True")
+            st.write('Your prediction is :',"True")
         else:
-            st.write('Your prdiction is :',"False")
+            st.write('Your prediction is :',"False")
         
     st.write("Note: This model is trained on less amount of data so prediction might be not accurate")    
