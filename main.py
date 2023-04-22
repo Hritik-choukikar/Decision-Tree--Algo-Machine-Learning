@@ -29,21 +29,21 @@ model=load_model()
 if __name__=='__main__':
     st.write('Helloo world')
 
-    company=st.selectbox('hoe',(df.company.unique()))
+    company=st.selectbox('Select Company:',(df.company.unique()))
     if company=='google':
         company=k[0]
     if company=='abc pharma':
         company=k[1]
     if company=='facebook':
         company=k[2]
-    job=st.selectbox('hoe',(df.job.unique()),key='uodcol')
+    job=st.selectbox('Select Position:',(df.job.unique()),key='uodcol')
     if job=='sales executive':
         job=k[0]
     if job=='business manager':
         job=k[1]
     if job=='computer programmer':
         job=k[2]
-    degree=st.selectbox('hoe',(df.degree.unique()),key='doias')
+    degree=st.selectbox('Select Degree:',(df.degree.unique()),key='doias')
     if degree=='bachelors':
         degree=k[0]
     if degree=='masters':
